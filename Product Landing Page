@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head >
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <ul>
+        <li class="nav-link"><a href="#">HOME</a></li>
+        <li class="nav-link"><a href="#">SERVICES</a></li>
+        <li class="nav-link"><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qJVVZYTYA9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <form for="form" id="form" action="https://www.freecodecamp.org/email-submit">
+    <p>*<p><input type="email" id="email" placeholder="EMAIL" required>
+    <button id="submit" type="submit">SUBMIT</button>
+
+  </div>
+</body>
+
+</html>
