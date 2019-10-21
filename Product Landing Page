@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head >
+<head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
   <title></title>
 </head>
 
 <body>
+
   <header id="header">
     <nav id="nav-bar">
+
+      <img id="header-img" src="https://cdn.pixabay.com/photo/2012/04/24/17/47/scale-40635__340.png" alt="law logo" height="70px">
       <ul>
-        <li class="nav-link"><a href="#">HOME</a></li>
-        <li class="nav-link"><a href="#">SERVICES</a></li>
-        <li class="nav-link"><a href="#">CONTACT US</a></li>
+        <!-- TODO: add links to buttons -->
+        <li id="Home"><button href="#" class="nav-link">Home</button></li>
+        <li id="Services"><button href="video" class="nav-link">Services</button></li>
+        <li><button href="contact-email" class="nav-link">Contact Us</button></li>
       </ul>
     </nav>
+    <div class="nav-line"></div>
   </header>
+  <!-- TODO: add database and actions for email input -->
 
-  <div class="content">
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qJVVZYTYA9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <form for="form" id="form" action="https://www.freecodecamp.org/email-submit">
-    <p>*<p><input type="email" id="email" placeholder="EMAIL" required>
-    <button id="submit" type="submit">SUBMIT</button>
 
+  <form id="form">
+    <p id="contact-text"> Contact us </p>
+    <input type="email" id="contact-email" name="contact-form" placeholder="email">
+    <button type="submit" id="submit-button" name="submit-email" src=" https://www.freecodecamp.com/email-submit">SUBMIT</button>
+  </form>
+  <div id="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TOjte_wqz6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
+
 </body>
 
 </html>
