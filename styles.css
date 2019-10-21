@@ -1,45 +1,77 @@
-:root {
-    --primary: #ddd;
-    --dark: #333;
-    --light: #fff;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+#header-image {
+display: flex;
+justify-content: flex-start;
+top: 25px
 }
-
-body{
-  display: grid;
-  /*grid-template-columns: repeat(8, 1fr); */
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: '. . . . . . . .'
-                       '. . c c c c . .';
-                       border: 1px;
-                       border-style: solid;
-}
-
-
-#nav-bar ul{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+ul {
   list-style: none;
-  border: 1px;
-  border-style: solid;
+  display: flex;
+  justify-content: space-around;
 }
-#nav-bar a{
-    background: var(--primary);
-    display: block;
-    text-decoration: none;
-    padding: 0.8rem;
-    text-align: center;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow);
-}
-.content {
-  display: grid;
-  grid-area: c;
 
-  align-self: ce;
-  border: 1px;
+.nav-line {
+  border: 0.5px;
   border-style: solid;
+}
+
+.nav-link {
+height: 40px;
+width: 100px;
+}
+
+/*#contact-text{
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(12, 1fr);
+  grid-row: 3 / 4;
+  grid-column: 6 / 8;
+}
+
+#contact-text p {
+
+} */
+#form {
+  display: grid;
+  grid-template: repeat(11, 1fr) / repeat(14, 1fr);
+
+}
+#contact-text {
+ grid-row: 4 / 5;
+ grid-column: 7 / 9;
+
+ font-size: 20px;
+ font-weight: bold;
+font-family: 'Turret Road', cursive;
+}
+
+#contact-email {
+  grid-row: 5 / 6;
+  grid-column: 6 / 9;
+}
+
+#submit-button {
+grid-column: 7 / 8;
+grid-row: 7 / 8;
+
+background-color: #3b5998;
+color: white;
+border: 0px;
+border-radius: 7%;
+}
+
+#submit-button:hover {
+  background-color: #2f477a;
+  cursor: pointer;
+}
+
+#video {
+  display:grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+
+
+}
+
+#video iframe{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
